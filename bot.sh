@@ -9,13 +9,13 @@ NC='\e[0m'
 apt update && apt upgrade
 apt install python3 python3-pip git
 cd /usr/bin
-wget https://raw.githubusercontent.com/Tomketstore/bot/main/bot/bot.zip
+wget https://raw.githubusercontent.com/Tomketstore/bot/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
 rm -rf bot.zip
 clear
-wget https://raw.githubusercontent.com/Tomketstore/bot/main/bot/addipvps.zip
+wget https://raw.githubusercontent.com/Tomketstore/bot/addipvps.zip
 unzip addipvps.zip
 pip3 install -r addipvps/requirements.txt
 
@@ -51,11 +51,11 @@ Restart=always
 WantedBy=multi-user.target
 END
 
-systemctl start kyt 
-systemctl enable kyt
-systemctl restart kyt
+systemctl start addipvps 
+systemctl enable addipvps
+systemctl restart addipvps
 cd /root
-rm -rf kyt.sh
+rm -rf main.sh
 echo "Done"
 echo "Your Data Bot"
 echo -e "==============================="
